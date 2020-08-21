@@ -66,18 +66,20 @@ function App() {
                 padding: '20px 0'
             };
 
-        const {name, price} = props.product;
+         const {name, price} = props.product;
 
               return (
                 <div style= { productStyle }>
-                  <h3>{name}</h3>
-                  <h5>{price}</h5>
-                  <button>Buy Now</button>
+                  <div>
+                    <h3>{name}</h3>
+                    <h5>{price}</h5>
+                    <button>Buy Now</button>
+                  </div>
                 </div>
                 );
       }  
             
-        function Users () {
+      function Users () {
               const style = {
                       color: 'white'
               }
@@ -104,7 +106,7 @@ function App() {
                   )
         }
 
-            function Friends ( props ) {
+        function Friends ( props ) {
 
               const friendStyle = {
                                     border : '1px solid gray',
@@ -126,7 +128,7 @@ function App() {
                                 <button>Get more about {name}</button>                          
                                     </div>
                                 );
-            }
+        }
 
 return (
     <div className="App">
@@ -152,7 +154,7 @@ return (
          }
 
 
-    {/*     Added friends        */}
+    {/* Added friends */}
 
          {
             allFriend.map (list => 
